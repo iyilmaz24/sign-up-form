@@ -23,6 +23,7 @@ body
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #left-half 
@@ -34,11 +35,27 @@ body
 
 #left-branded-div
 {
-    margin-top: -300px;
+    margin-top: -19rem;    
+    font-size: 1.2rem;
 }
 
 #right-half
 {
     flex-basis: 65%;
     justify-content: space-around;
+}
+
+#right-title-text
+{
+    font-size: 1.2rem;
+}
+
+#right-form-inputs
+{ 
+    font-size: 1rem;
+}
+
+#right-submit-button
+{
+    font-size: 1rem;
 }
