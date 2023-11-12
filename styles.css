@@ -30,12 +30,11 @@ body
 {
     background-color: #FF385C;
     flex-basis: 35%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #left-branded-div
-{
-    margin-top: -19rem;    
+{  
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
@@ -50,6 +49,11 @@ body
 #left-text
 {   
     line-height: 6rem;
+}
+
+#left-subtext-div
+{
+    font-size: 0.75rem;
 }
 
 #right-half
