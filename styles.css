@@ -37,13 +37,14 @@ body
 {
     margin-top: -19rem;    
     font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
 }
 
 #left-text-background
 {
     height: 6rem;
     background-color: hsl(210, 10%, 35%, 0.7);
-    width: 100%;
 }
 
 #left-text
