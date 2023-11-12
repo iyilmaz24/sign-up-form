@@ -60,6 +60,7 @@ body
 #right-title-text
 {
     font-size: 1.2rem;
+    background-color: #F7F7F7;
 }
 
 #right-form-inputs
@@ -70,4 +71,5 @@ body
 #right-submit-button
 {
     font-size: 1rem;
+    background-color: #F7F7F7;
 }
