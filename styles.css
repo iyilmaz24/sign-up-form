@@ -39,6 +39,18 @@ body
     font-size: 1.2rem;
 }
 
+#left-text-background
+{
+    height: 6rem;
+    background-color: hsl(210, 10%, 35%, 0.7);
+    width: 100%;
+}
+
+#left-text
+{   
+    line-height: 6rem;
+}
+
 #right-half
 {
     flex-basis: 65%;
