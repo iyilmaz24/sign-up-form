@@ -85,6 +85,16 @@ body
     background-color: #FFFFFF;
 }
 
+#form-title
+{
+    font-size: 1.4rem;
+}
+
+#first-name, #last-name, #email, #phone-number, #password, #confirm-password
+{
+    margin: 1rem;
+}
+
 #right-submit-div
 {
     font-size: 1rem;
