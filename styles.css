@@ -1,5 +1,7 @@
 html 
 {
+    margin: 0;
+    height: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     background-color: #FFFFFF;
@@ -10,5 +12,19 @@ html
 body
 {
     margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
+#left-half, #right-half
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left-half 
+{
+    background-color: #FF385C;
+}
