@@ -73,16 +73,32 @@ body
     flex-direction: column;
 }
 
+#right-title, #right-text, #login-link, #create-acc-button
+{
+    margin: 1rem 3rem 1rem 3rem;
+}
+
 #right-form-inputs
 { 
     font-size: 1rem;
-    flex-basis: 55%;
+    flex-basis: 50%;
     background-color: #FFFFFF;
 }
 
-#right-submit-button
+#right-submit-div
 {
     font-size: 1rem;
-    flex-basis: 15%;
+    flex-basis: 20%;
+    display: flex;
     flex-direction: column;
+}
+
+#create-acc-button
+{
+    margin-top: 3rem;
+}
+
+#login-link
+{
+    font-size: 0.75rem;
 }
