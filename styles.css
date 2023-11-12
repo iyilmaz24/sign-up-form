@@ -4,7 +4,7 @@ html
     height: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -57,19 +57,31 @@ body
     justify-content: space-around;
 }
 
+#right-title-text, #right-form-inputs, #right-submit-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+    width: 100%;
+}
+
 #right-title-text
 {
     font-size: 1.2rem;
-    background-color: #F7F7F7;
+    flex-basis: 30%;
 }
 
 #right-form-inputs
 { 
     font-size: 1rem;
+    flex-basis: 55%;
+    background-color: #FFFFFF;
 }
 
 #right-submit-button
 {
     font-size: 1rem;
-    background-color: #F7F7F7;
+    flex-basis: 15%;
+    flex-direction: column;
 }
