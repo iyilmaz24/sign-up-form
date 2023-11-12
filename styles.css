@@ -27,4 +27,10 @@ body
 #left-half 
 {
     background-color: #FF385C;
+    flex-basis: 35%;
+}
+
+#right-half
+{
+    flex-basis: 65%;
 }
