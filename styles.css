@@ -95,12 +95,22 @@ body
     margin: 1rem;
 }
 
+.input-row
+{
+    display: flex;
+}
+
+.input-pair
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+}
+
 #right-submit-div
 {
     font-size: 1rem;
     flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
 }
 
 #create-acc-button
