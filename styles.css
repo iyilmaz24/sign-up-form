@@ -33,7 +33,7 @@ body
     background-color: #D5EDF6;
     flex-basis: 40%;
     justify-content: space-around;
-    background-image: url(./images/christmas-backsplash3.jpeg);
+    background-image: url(./images/left-backdrop.jpeg);
     background-size: cover;
 }
 
@@ -48,6 +48,9 @@ body
 {
     height: 6rem;
     background-color: hsl(214, 3%, 47%, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -61,6 +64,12 @@ body
     color: black;
     font-family: Norse-Bold;
     font-size:3rem;
+}
+
+#left-logo
+{
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #left-subtext-div
