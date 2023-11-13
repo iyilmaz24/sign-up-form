@@ -47,19 +47,22 @@ body
 #left-text-background
 {
     height: 6rem;
-    background-color: hsl(210, 10%, 35%, 0.7);
+    background-color: hsl(214, 3%, 47%, 0.6);
 }
 
 #left-text
 {   
     line-height: 6rem;
+    color: rgb(18, 87, 157)
 }
 
 #left-subtext-div
 {
-    font-size: 0.75rem;
-    font-weight: 900;
-    color: red;
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(5, 52, 100);
+    padding: 1.25rem;
+    background-color: hsla(214, 3%, 47%, 0.8);
 }
 
 /* ---------- RIGHT SIDE OF SCREEN ----------- */
