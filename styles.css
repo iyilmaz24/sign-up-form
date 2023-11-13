@@ -30,9 +30,11 @@ body
 
 #left-half 
 {
-    background-color: #FF385C;
+    background-color: #D5EDF6;
     flex-basis: 40%;
     justify-content: space-around;
+    background-image: url(./images/christmas-backsplash3.jpeg);
+    background-size: cover;
 }
 
 #left-branded-div
@@ -56,6 +58,8 @@ body
 #left-subtext-div
 {
     font-size: 0.75rem;
+    font-weight: 900;
+    color: red;
 }
 
 /* ---------- RIGHT SIDE OF SCREEN ----------- */
