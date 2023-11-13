@@ -26,6 +26,8 @@ body
     align-items: center;
 }
 
+/* ------- LEFT SIDE OF SCREEN --------- */
+
 #left-half 
 {
     background-color: #FF385C;
@@ -56,11 +58,15 @@ body
     font-size: 0.75rem;
 }
 
+/* ---------- RIGHT SIDE OF SCREEN ----------- */
+
 #right-half
 {
     flex-basis: 60%;
     justify-content: space-around;
 }
+
+/* ------------ RIGHT TOP TITLE AND TEXT ------------ */
 
 #right-title-text, #right-form-inputs, #right-submit-button
 {
@@ -72,7 +78,7 @@ body
 
 #right-title-text
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
@@ -84,6 +90,8 @@ body
 {
     margin: 1rem 3rem 1rem 3rem;
 }
+
+/* ------------ RIGHT SIGN UP FORM ------------ */
 
 form
 {
@@ -129,17 +137,65 @@ form
     align-items: flex-start;
 }
 
+/* -------- RIGHT BUTTON AND LOGIN TEXT ---------- */
+
 #right-submit-div
 {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     flex-basis: 20%;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
-#create-acc-button
-{
-    margin-top: 3rem;
+.create-acc-button {
+    background-color: transparent;
+    border: 1px solid #266DB6;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: "Avenir Next LT W01 Bold",sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding: 0.75rem 1.1rem;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.create-acc-button:hover,
+.create-acc-button:active {
+    outline: 0;
+}
+
+.create-acc-button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.create-acc-button:before {
+    background-color: #D5EDF6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+.create-acc-button:hover:before {
+    background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+    .create-acc-button {
+    padding: 0.75rem 1.5rem;
+    }
 }
 
 #login-link
