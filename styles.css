@@ -76,6 +76,7 @@ body
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
+    max-width: 70ch;
 }
 
 #right-title, #right-text, #login-link, #create-acc-button
@@ -86,13 +87,13 @@ body
 form
 {
     width: 100%;
-    margin-right: 12rem;
-    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #right-form-inputs
 { 
-    display: flex;
     font-size: 1rem;
     flex-basis: 50%;
     background-color: #FFFFFF;
