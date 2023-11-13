@@ -87,7 +87,7 @@ form
 {
     width: 100%;
     margin-right: 12rem;
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 
 #right-form-inputs
@@ -99,11 +99,6 @@ form
     width: 100%;
 }
 
-#form-title
-{
-    font-size: 1.4rem;
-}
-
 #first-name, #last-name, #email, #phone-number, #password, #confirm-password
 {
     margin: 1rem;
@@ -113,10 +108,15 @@ form
 .form-row
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
-.input-pair
+#form-title
+{
+    font-size: 1.4rem;
+}
+
+.input-pair-first, .input-pair-second
 {
     display: flex;
     flex-direction: column;
@@ -124,8 +124,15 @@ form
     align-items: flex-start;
 }
 
+.input-pair-second
+{
+    margin-left: 6rem;
+}
+
 #right-submit-div
 {
+    display: flex;
+    flex-direction: column;
     font-size: 1rem;
     flex-basis: 20%;
 }
