@@ -53,14 +53,14 @@ body
 #left-text
 {   
     line-height: 6rem;
-    color: rgb(18, 87, 157)
+    color: black;
 }
 
 #left-subtext-div
 {
     font-size: 1rem;
     font-weight: 800;
-    color: rgb(5, 52, 100);
+    color: black;
     padding: 1.25rem;
     background-color: hsla(214, 3%, 47%, 0.8);
 }
@@ -91,6 +91,16 @@ body
     flex-direction: column;
     max-width: 67ch;
     text-align: center;
+}
+
+#right-title
+{
+    color: rgb(5, 52, 100);
+}
+
+#right-text
+{
+    color: rgb(18, 87, 157);
 }
 
 #right-title, #right-text, #login-link, #create-acc-button
