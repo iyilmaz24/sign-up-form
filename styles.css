@@ -50,10 +50,22 @@ body
     background-color: hsl(214, 3%, 47%, 0.6);
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
 #left-text
 {   
     line-height: 6rem;
     color: black;
+    font-family: Norse-Bold;
+    font-size:3rem;
+}
+
+#left-text-icon 
+{
+    height: 2rem;
 }
 
 #left-subtext-div
