@@ -22,11 +22,15 @@ addEventListener("DOMContentLoaded", () => {
         {
             console.log(passText + " Not Valid!");
             passwordStrong = false;
+            passwordInput.style.borderColor = "red";
+            passwordInput.style.borderStyle = "solid";
         }
         else if(password_regex.test(passText))
         {
             console.log("Password Accepted.");
             passwordStrong = true;
+            passwordInput.style.borderColor = "green";
+            passwordInput.style.borderStyle = "solid";
         }
         console.log(passwordStrong)
     })
@@ -37,15 +41,21 @@ addEventListener("DOMContentLoaded", () => {
         {
             console.log("Password Confirmed.")
             passwordMatch = true;
+            passwordConfirm.style.borderColor = "green";
+            passwordConfirm.style.borderStyle = "solid";
         }
         else if(passwordStrong !== true)
         {
             console.log("Password Doesnt Meet Requirements!");
+            passwordConfirm.style.borderColor = "orange";
+            passwordConfirm.style.borderStyle = "solid";
         }
         else if(passCtext !== passText)
         {
             console.log("Passwords Do Not Match!")
             passwordMatch = false;
+            passwordConfirm.style.borderColor = "red";
+            passwordConfirm.style.borderStyle = "solid";
         }
     })
 
