@@ -4,7 +4,6 @@ password_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$/
 // Must have at least one uppercase letter
 // Must have at least one lower case letter
 // Must have at least one digit
-// Should contain other characters
 
 addEventListener("DOMContentLoaded", () => {
 
@@ -18,28 +17,28 @@ addEventListener("DOMContentLoaded", () => {
 
     statusSpan1 = document.getElementById("status-span1");
     statusSpan2 = document.getElementById("status-span2");
-    console.log(statusSpan1.textContent, statusSpan2.textContent)
     function displayStatus(statusMsg, spanNum)
     {
         if(spanNum === 1)
         {
-            statusSpan1.textContent = "";
+            statusSpan1.innerHTML = "";
             statusSpan1.style.display = "block";
-            statusSpan1.textContent = statusMsg;
+            statusSpan1.innerHTML = statusMsg;
         }
         if(spanNum === 2)
         {
-            statusSpan2.textContent = "";
+            statusSpan2.innerHTML = "";
             statusSpan2.style.display = "block";
-            statusSpan2.textContent = statusMsg;
+            statusSpan2.innerHTML = statusMsg;
         }
     }
 
+    passwordReqMsg = "<b>Doesnt Meet Requirements:</b><i><br>6 to 12 characters in length<br>At least one uppercase letter<br>Must have at least one digit</i>";
     passwordInput.addEventListener("focusout", (e) => {
         passText = e.target.value;
         if(!password_regex.test(passText))
         {
-            displayStatus("Password Doesnt Meet Requirements!", 1);
+            displayStatus(passwordReqMsg, 1);
             passwordStrong = false;
             passwordInput.style.borderColor = "red";
             passwordInput.style.borderStyle = "solid";
@@ -64,16 +63,25 @@ addEventListener("DOMContentLoaded", () => {
         }
         else if(passwordStrong !== true)
         {
-            displayStatus("Password Doesnt Meet Requirements!", 1);
+            displayStatus(passwordReqMsg, 1);
             passwordConfirm.style.borderColor = "orange";
             passwordConfirm.style.borderStyle = "solid";
         }
         else if(passCtext !== passText)
         {
-            displayStatus("Passwords Do Not Match!", 2);
-            passwordMatch = false;
-            passwordConfirm.style.borderColor = "red";
-            passwordConfirm.style.borderStyle = "solid";
+            if(passCtext === "")
+            {
+                statusSpan2.textContent = "";
+                passwordConfirm.style.borderColor = "red";
+                passwordConfirm.style.borderStyle = "solid";
+            }
+            else
+            {
+                displayStatus("Passwords Do Not Match!", 2);
+                passwordMatch = false;
+                passwordConfirm.style.borderColor = "red";
+                passwordConfirm.style.borderStyle = "solid";
+            }
         }
     })
 
