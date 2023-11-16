@@ -16,43 +16,61 @@ addEventListener("DOMContentLoaded", () => {
     passwordStrong = false;
     passwordMatch = false;
 
+    statusSpan1 = document.getElementById("status-span1");
+    statusSpan2 = document.getElementById("status-span2");
+    console.log(statusSpan1.textContent, statusSpan2.textContent)
+    function displayStatus(statusMsg, spanNum)
+    {
+        if(spanNum === 1)
+        {
+            statusSpan1.textContent = "";
+            statusSpan1.style.display = "block";
+            statusSpan1.textContent = statusMsg;
+        }
+        if(spanNum === 2)
+        {
+            statusSpan2.textContent = "";
+            statusSpan2.style.display = "block";
+            statusSpan2.textContent = statusMsg;
+        }
+    }
+
     passwordInput.addEventListener("focusout", (e) => {
         passText = e.target.value;
         if(!password_regex.test(passText))
         {
-            console.log(passText + " Not Valid!");
+            displayStatus("Password Doesnt Meet Requirements!", 1);
             passwordStrong = false;
             passwordInput.style.borderColor = "red";
             passwordInput.style.borderStyle = "solid";
         }
         else if(password_regex.test(passText))
         {
-            console.log("Password Accepted.");
+            displayStatus("Password Accepted.", 1);
             passwordStrong = true;
             passwordInput.style.borderColor = "green";
             passwordInput.style.borderStyle = "solid";
         }
-        console.log(passwordStrong)
     })
 
     passwordConfirm.addEventListener("focusout", (e) => {
         passCtext = e.target.value;
-        if(passwordStrong === true & passCtext === passText)
+        if((passwordStrong === true) & (passCtext === passText))
         {
-            console.log("Password Confirmed.")
+            displayStatus("Password Confirmed.", 2);
             passwordMatch = true;
             passwordConfirm.style.borderColor = "green";
             passwordConfirm.style.borderStyle = "solid";
         }
         else if(passwordStrong !== true)
         {
-            console.log("Password Doesnt Meet Requirements!");
+            displayStatus("Password Doesnt Meet Requirements!", 1);
             passwordConfirm.style.borderColor = "orange";
             passwordConfirm.style.borderStyle = "solid";
         }
         else if(passCtext !== passText)
         {
-            console.log("Passwords Do Not Match!")
+            displayStatus("Passwords Do Not Match!", 2);
             passwordMatch = false;
             passwordConfirm.style.borderColor = "red";
             passwordConfirm.style.borderStyle = "solid";

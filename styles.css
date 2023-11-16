@@ -195,6 +195,17 @@ label
     margin-bottom: -0.3rem;
 }
 
+#password, #confirm-password
+{
+    margin-bottom: 0.1rem;
+}
+
+#status-span1, #status-span2
+{
+    font-size: 0.6rem;
+    display: none;
+}
+
 /* -------- RIGHT BUTTON AND LOGIN TEXT ---------- */
 
 #right-submit-div
