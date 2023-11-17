@@ -33,7 +33,7 @@ addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    passwordReqMsg = "<b>Doesnt Meet Requirements:</b><i><br>6 to 12 characters in length<br>At least one uppercase letter<br>Must have at least one digit</i>";
+    passwordReqMsg = "<b>Doesnt Meet Requirements:</b><i><br>6 - 12 characters, atleast 1 digit. At least one uppercase letter</i>";
     passwordInput.addEventListener("focusout", (e) => {
         passText = e.target.value;
         if(!password_regex.test(passText))
