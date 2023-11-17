@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 799px)" href="mobileStyles.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="styles.css">
     <script src="javascript.js"></script>
     <title>VoyageClub</title>
     <link rel="shortcut icon" href="./images/odin-project-logo.png" type="image/jpeg">
@@ -17,7 +18,7 @@
             <div id="left-text-background">
                 <span id="left-text">
                     VoyageClub
-                    <img id="left-logo" src="images/odin-project-logo.png">
+                <img id="left-logo" src="images/odin-project-logo.png">
             </div>
         </div>
         <div id="left-subtext-div">
@@ -77,7 +78,7 @@
                         <span id="status-span1"></span>
                     </span>                    
                     <span class="input-pair">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <label id="confirm-password-label" for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm-password" required>
                         <span id="status-span2"></span>
                     </span>
